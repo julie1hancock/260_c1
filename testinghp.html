@@ -1,0 +1,91 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <link href="main.css" rel="stylesheet" id="ss">
+    </head>
+    <body>
+        <button id="g" onclick="gryf()">Gryffindor</button>
+        <button id="r" onclick="rave()">Ravenclaw</button>
+        <button id="h" onclick="huff()">Hufflepuff</button>
+        <button id="s" onclick="slyt()">Slytherin</button>
+        
+        <h2 id=houseName>Hogwarts Students</h2>
+        <ul id="testlist">
+            
+        </ul>
+        
+        <p id="list1head"></p>
+            <ul>
+                <li id="l11">Wizards</li>
+                <li id="l12">English</li>
+                <li id="l13">Like Quidditch</li>
+            </ul>
+        <p id="list2head"></p>
+            <ul>
+               <li id="l21">Irresponsible</li>
+               <li id="l22">Prone to pranks</li>
+               <li id="l23">Pretty obvious to Muggles</li>
+           </ul> 
+            <h3 id="quote"></h3>
+            <img src="Hogwarts_Crest.jpg" id="crest" />
+        <script>
+                document.getElementById("list1head").innerHTML = "They tend to be";                
+                document.getElementById("list2head").innerHTML = "However, they often are also";                
+         
+            function huff(){
+                document.getElementById("crest").setAttribute("src", "huff.jpg");
+                document.getElementById("ss").setAttribute("href", "huff.css");
+                document.getElementById("houseName").innerHTML = "Hufflepuff";
+                document.getElementById("l11").innerHTML = "Humble";
+                document.getElementById("l12").innerHTML = "Friendly";
+                document.getElementById("l13").innerHTML = "Daring";
+                document.getElementById("l21").innerHTML = "Too Humble";
+                document.getElementById("l22").innerHTML = "Not seen to have any \"special\" traits";
+                document.getElementById("l23").innerHTML = "Less competitive (lower/lack of drive)";
+                document.getElementById("quote").innerHTML = "DO WHAT IS KIND";
+            }
+            
+            function rave(){
+                document.getElementById("crest").setAttribute("src", "rave.jpg");
+                document.getElementById("ss").setAttribute("href", "rave.css");
+                document.getElementById("houseName").innerHTML = "Ravenclaw";
+                document.getElementById("l11").innerHTML = "Intellegent";
+                document.getElementById("l12").innerHTML = "Creative";
+                document.getElementById("l13").innerHTML = "Self-Sufficient";
+                document.getElementById("l21").innerHTML = "Cliquey";
+                document.getElementById("l22").innerHTML = "Arrogant";
+                document.getElementById("l23").innerHTML = "Anti-social";
+                document.getElementById("quote").innerHTML = "DO WHAT IS WISE";
+            }
+            function slyt(){
+                document.getElementById("crest").setAttribute("src", "slyt.jpg");
+
+                
+                document.getElementById("ss").setAttribute("href", "slyt.css");
+                document.getElementById("houseName").innerHTML = "Slytherin";
+                document.getElementById("l11").innerHTML = "Cunning";
+                document.getElementById("l12").innerHTML = "Ambitious";
+                document.getElementById("l13").innerHTML = "Resourceful";
+                document.getElementById("l21").innerHTML = "Power-hungry";
+                document.getElementById("l22").innerHTML = "Hold Self-Preservation above helping others";
+                document.getElementById("l23").innerHTML = "Believe the ends justify the means";
+                document.getElementById("quote").innerHTML = "DO WHAT IS NECESSARY";
+            }
+            function gryf(){
+                document.getElementById("crest").setAttribute("src", "gryf.jpg");
+                document.getElementById("ss").setAttribute("href", "gryf.css");
+                document.getElementById("houseName").innerHTML = "Gryffindor";
+                document.getElementById("l11").innerHTML = "Brave";
+                document.getElementById("l12").innerHTML = "Daring";
+                document.getElementById("l13").innerHTML = "Chivalrous";
+                document.getElementById("l21").innerHTML = "Arrogant";
+                document.getElementById("l22").innerHTML = "Reckless";
+                document.getElementById("l23").innerHTML = "Self-righteous";
+                document.getElementById("l23").innerHTML = "Self-righteous";
+                document.getElementById("quote").innerHTML = "DO WHAT IS RIGHT"
+            }
+            
+        </script>
+    </body>
+    
+</html>
